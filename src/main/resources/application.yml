@@ -5,5 +5,8 @@ micronaut:
     enabled: true
     export:
       influx:
-        enabled: true
+        enabled: false
         step: PT1M
+
+jackson:
+  property-naming-strategy: SNAKE_CASE

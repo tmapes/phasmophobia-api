@@ -1,4 +1,4 @@
-package info.mapes
+package info.mapes.phasmophobiaapi
 
 import io.micronaut.runtime.Micronaut.*
 import io.swagger.v3.oas.annotations.*
@@ -15,7 +15,7 @@ object Api {
 fun main(args: Array<String>) {
 	build()
 	    .args(*args)
-		.packages("info.mapes")
+		.packages("info.mapes.phasmophobiaapi")
 		.start()
 }
 
