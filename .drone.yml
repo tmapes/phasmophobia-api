@@ -11,6 +11,25 @@ steps:
     commands:
       - ./gradlew clean build distTar
 
+  - name: docker build dry run
+    image: plugins/docker
+    when:
+      event:
+        - pull_request
+      branch:
+        - main
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      registry: http://docker.internal.mapes.info
+      insecure: true
+      dry_run: true
+      repo: docker.internal.mapes.info/phasmophobia-api
+      mirror: https://docker.mapes.info
+      tags: 'b${DRONE_BUILD_NUMBER}-${DRONE_BUILD_COMMIT}'
+
   - name: docker publish snapshot
     image: plugins/docker
     when:
@@ -27,7 +46,7 @@ steps:
       insecure: true
       repo: docker.internal.mapes.info/phasmophobia-api
       mirror: https://docker.mapes.info
-      tags: 'b${DRONE_BUILD_NUMBER}-{DRONE_BUILD_COMMIT}'
+      tags: 'b${DRONE_BUILD_NUMBER}-${DRONE_BUILD_COMMIT}'
 
   - name: docker publish release
     image: plugins/docker
