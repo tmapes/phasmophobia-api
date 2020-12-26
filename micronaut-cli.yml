@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: info.mapes
+testFramework: spock
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, gradle, http-client, kotlin, kotlin-application, logback, management, micrometer, micrometer-influx, netty-server, openapi, readme, shade, spock, yaml]
