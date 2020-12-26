@@ -1,4 +1,4 @@
-package info.mapes
+package info.mapes.phasmophobiaapi
 
 import io.micronaut.runtime.EmbeddedApplication
 import io.micronaut.test.extensions.spock.annotation.MicronautTest
