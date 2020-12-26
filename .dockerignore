@@ -1,0 +1,5 @@
+# Ignore Everything
+*
+
+# Include Jar
+!/build/lib/phasmophobiaapi-0.1.jar
