@@ -28,7 +28,7 @@ steps:
       dry_run: true
       repo: docker.internal.mapes.info/phasmophobia-api
       mirror: https://docker.mapes.info
-      tags: 'b${DRONE_BUILD_NUMBER}-${DRONE_BUILD_COMMIT}'
+      tags: 'b${DRONE_BUILD_NUMBER}-${DRONE_COMMIT:0:8}'
 
   - name: docker publish snapshot
     image: plugins/docker
@@ -46,7 +46,7 @@ steps:
       insecure: true
       repo: docker.internal.mapes.info/phasmophobia-api
       mirror: https://docker.mapes.info
-      tags: 'b${DRONE_BUILD_NUMBER}-${DRONE_BUILD_COMMIT}'
+      tags: 'b${DRONE_BUILD_NUMBER}-${DRONE_COMMIT:0:8}'
 
   - name: docker publish release
     image: plugins/docker
