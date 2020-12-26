@@ -16,10 +16,10 @@ class EvidenceCalculationSpec extends AbstractIntegrationSpec {
 
         expect: "the output body matches the expected result set"
         def response = v1HttpClient.toBlocking().retrieve(httpRequest)
-        def mappedResponse = objectMapper.readValue(response, Ghost[].class).toList()
+        def mappedResponse = objectMapper.readValue(response, Ghost[].class).toList().toSet()
 
         and: "all returned ghosts match the expected response"
-        expectedGhosts.containsAll(mappedResponse)
+        expectedGhosts.toSet() == mappedResponse
 
         where:
         inputEvidence                                         | expectedGhosts
