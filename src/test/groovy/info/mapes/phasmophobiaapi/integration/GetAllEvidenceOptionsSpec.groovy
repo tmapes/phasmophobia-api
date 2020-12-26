@@ -21,5 +21,6 @@ class GetAllEvidenceOptionsSpec extends AbstractIntegrationSpec {
                 "GHOST_ORBS"
         ]
 
+        0 * _
     }
 }
