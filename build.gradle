@@ -67,3 +67,11 @@ tasks {
 
 
 }
+
+tasks.withType(Test) {
+    outputs.upToDateWhen { false }
+    testLogging {
+        exceptionFormat = 'full'
+        showStandardStreams = true
+    }
+}
