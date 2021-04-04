@@ -12,3 +12,91 @@ jackson:
   property-naming-strategy: SNAKE_CASE
   deserialization:
     fail-on-unknown-properties: false
+
+phasmophobia:
+  evidence-types:
+    - name: "Ghost Writing"
+      code: "GHOST_WRITING"
+    - name: "Spirit Box"
+      code: "SPIRIT_BOX"
+    - name: "Fingerprints"
+      code: "FINGERPRINTS"
+    - name: "Freezing Temperatures"
+      code: "FREEZING_TEMPERATURES"
+    - name: "EMF Level 5"
+      code: "EMF_LEVEL_FIVE"
+    - name: "Ghost Orbs"
+      code: "GHOST_ORBS"
+  ghost-types:
+    - name: "Spirit"
+      code: "SPIRIT"
+      evidence-codes:
+        - "SPIRIT_BOX"
+        - "GHOST_WRITING"
+        - "FINGERPRINTS"
+    - name: "Poltergeist"
+      code: "POLTERGEIST"
+      evidence-codes:
+        - "GHOST_ORBS"
+        - "SPIRIT_BOX"
+        - "FINGERPRINTS"
+    - name: "Oni"
+      code: "ONI"
+      evidence-codes:
+        - "EMF_LEVEL_FIVE"
+        - "SPIRIT_BOX"
+        - "GHOST_WRITING"
+    - name: "Shade"
+      code: "SHADE"
+      evidence-codes:
+        - "EMF_LEVEL_FIVE"
+        - "GHOST_ORBS"
+        - "GHOST_WRITING"
+    - name: "Jinn"
+      code: "JINN"
+      evidence-codes:
+        - "EMF_LEVEL_FIVE"
+        - "GHOST_ORBS"
+        - "SPIRIT_BOX"
+    - name: "Wraith"
+      code: "WRAITH"
+      evidence-codes:
+        - "FREEZING_TEMPERATURES"
+        - "GHOST_ORBS"
+        - "SPIRIT_BOX"
+    - name: "Demon"
+      code: "DEMON"
+      evidence-codes:
+        - "FREEZING_TEMPERATURES"
+        - "GHOST_WRITING"
+        - "SPIRIT_BOX"
+    - name: "Yurei"
+      code: "YUREI"
+      evidence-codes:
+        - "FREEZING_TEMPERATURES"
+        - "GHOST_WRITING"
+        - "GHOST_ORBS"
+    - name: "Mare"
+      code: "MARE"
+      evidence-codes:
+        - "FREEZING_TEMPERATURES"
+        - "SPIRIT_BOX"
+        - "GHOST_ORBS"
+    - name: "Banshee"
+      code: "BANSHEE"
+      evidence-codes:
+        - "FREEZING_TEMPERATURES"
+        - "EMF_LEVEL_FIVE"
+        - "FINGERPRINTS"
+    - name: "Phantom"
+      code: "PHANTOM"
+      evidence-codes:
+        - "FREEZING_TEMPERATURES"
+        - "EMF_LEVEL_FIVE"
+        - "GHOST_ORBS"
+    - name: "Revenant"
+      code: "REVENANT"
+      evidence-codes:
+        - "EMF_LEVEL_FIVE"
+        - "GHOST_WRITING"
+        - "FINGERPRINTS"
