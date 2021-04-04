@@ -11,8 +11,8 @@ version = "0.1"
 group = "info.mapes.phasmophobiaapi"
 
 repositories {
-    maven { url = "http://nexus.internal.mapes.info/repository/maven-central" }
-    maven { url = "http://nexus.internal.mapes.info/repository/jcenter" }
+    maven { url = "http://binrepo.mapes.info/repository/maven-central" }
+    maven { url = "http://binrepo.mapes.info/repository/jcenter" }
 //    mavenCentral()
 //    jcenter()
 }
