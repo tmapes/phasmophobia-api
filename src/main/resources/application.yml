@@ -30,73 +30,73 @@ phasmophobia:
   ghost-types:
     - name: "Spirit"
       code: "SPIRIT"
-      evidence-codes:
+      evidence_codes:
         - "SPIRIT_BOX"
         - "GHOST_WRITING"
         - "FINGERPRINTS"
     - name: "Poltergeist"
       code: "POLTERGEIST"
-      evidence-codes:
+      evidence_codes:
         - "GHOST_ORBS"
         - "SPIRIT_BOX"
         - "FINGERPRINTS"
     - name: "Oni"
       code: "ONI"
-      evidence-codes:
+      evidence_codes:
         - "EMF_LEVEL_FIVE"
         - "SPIRIT_BOX"
         - "GHOST_WRITING"
     - name: "Shade"
       code: "SHADE"
-      evidence-codes:
+      evidence_codes:
         - "EMF_LEVEL_FIVE"
         - "GHOST_ORBS"
         - "GHOST_WRITING"
     - name: "Jinn"
       code: "JINN"
-      evidence-codes:
+      evidence_codes:
         - "EMF_LEVEL_FIVE"
         - "GHOST_ORBS"
         - "SPIRIT_BOX"
     - name: "Wraith"
       code: "WRAITH"
-      evidence-codes:
+      evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "GHOST_ORBS"
         - "SPIRIT_BOX"
     - name: "Demon"
       code: "DEMON"
-      evidence-codes:
+      evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "GHOST_WRITING"
         - "SPIRIT_BOX"
     - name: "Yurei"
       code: "YUREI"
-      evidence-codes:
+      evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "GHOST_WRITING"
         - "GHOST_ORBS"
     - name: "Mare"
       code: "MARE"
-      evidence-codes:
+      evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "SPIRIT_BOX"
         - "GHOST_ORBS"
     - name: "Banshee"
       code: "BANSHEE"
-      evidence-codes:
+      evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "EMF_LEVEL_FIVE"
         - "FINGERPRINTS"
     - name: "Phantom"
       code: "PHANTOM"
-      evidence-codes:
+      evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "EMF_LEVEL_FIVE"
         - "GHOST_ORBS"
     - name: "Revenant"
       code: "REVENANT"
-      evidence-codes:
+      evidence_codes:
         - "EMF_LEVEL_FIVE"
         - "GHOST_WRITING"
         - "FINGERPRINTS"
