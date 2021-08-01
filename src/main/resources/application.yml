@@ -100,3 +100,15 @@ phasmophobia:
         - "EMF_LEVEL_FIVE"
         - "GHOST_WRITING"
         - "FINGERPRINTS"
+    - name: "Yokai"
+      code: "YOKAI"
+      evidence_codes:
+        - "SPIRIT_BOX"
+        - "GHOST_ORBS"
+        - "GHOST_WRITING"
+    - name: "Hantu"
+      code: "HANTU"
+      evidence_codes:
+        - "FINGERPRINTS"
+        - "GHOST_ORBS"
+        - "GHOST_WRITING"
