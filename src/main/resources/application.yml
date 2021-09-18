@@ -114,3 +114,15 @@ phasmophobia:
         - "FINGERPRINTS"
         - "GHOST_ORBS"
         - "FREEZING_TEMPERATURES"
+    - name: "Goryo"
+      code: "GORYO"
+      evidence_codes:
+        - "EMF_LEVEL_FIVE"
+        - "FINGERPTINTS"
+        - "DOTS_PROJECTOR"
+    - name: "Myling"
+      code: "MYLING"
+      evidence_codes:
+        - "GHOST_WRITING"
+        - "EMF_LEVEL_FIVE"
+        - "FINGERPTINTS"
