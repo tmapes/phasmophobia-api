@@ -12,6 +12,7 @@ jackson:
   property-naming-strategy: SNAKE_CASE
   deserialization:
     fail-on-unknown-properties: false
+  serialization-inclusion: always
 
 phasmophobia:
   evidence-types:
