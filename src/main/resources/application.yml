@@ -118,11 +118,11 @@ phasmophobia:
       code: "GORYO"
       evidence_codes:
         - "EMF_LEVEL_FIVE"
-        - "FINGERPTINTS"
+        - "FINGERPRINTS"
         - "DOTS_PROJECTOR"
     - name: "Myling"
       code: "MYLING"
       evidence_codes:
         - "GHOST_WRITING"
         - "EMF_LEVEL_FIVE"
-        - "FINGERPTINTS"
+        - "FINGERPRINTS"
