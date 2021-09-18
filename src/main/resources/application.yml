@@ -46,13 +46,13 @@ phasmophobia:
       code: "ONI"
       evidence_codes:
         - "EMF_LEVEL_FIVE"
-        - "SPIRIT_BOX"
-        - "GHOST_WRITING"
+        - "DOTS_PROJECTOR"
+        - "FREEZING_TEMPERATURES"
     - name: "Shade"
       code: "SHADE"
       evidence_codes:
         - "EMF_LEVEL_FIVE"
-        - "GHOST_ORBS"
+        - "FREEZING_TEMPERATURES"
         - "GHOST_WRITING"
     - name: "Jinn"
       code: "JINN"
@@ -71,12 +71,12 @@ phasmophobia:
       evidence_codes:
         - "FREEZING_TEMPERATURES"
         - "GHOST_WRITING"
-        - "SPIRIT_BOX"
+        - "FINGERPRINTS"
     - name: "Yurei"
       code: "YUREI"
       evidence_codes:
         - "FREEZING_TEMPERATURES"
-        - "GHOST_WRITING"
+        - "DOTS_PROJECTOR"
         - "GHOST_ORBS"
     - name: "Mare"
       code: "MARE"
@@ -107,10 +107,10 @@ phasmophobia:
       evidence_codes:
         - "SPIRIT_BOX"
         - "GHOST_ORBS"
-        - "GHOST_WRITING"
+        - "DOTS_PROJECTOR"
     - name: "Hantu"
       code: "HANTU"
       evidence_codes:
         - "FINGERPRINTS"
         - "GHOST_ORBS"
-        - "GHOST_WRITING"
+        - "FREEZING_TEMPERATURES"
