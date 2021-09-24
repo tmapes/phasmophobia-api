@@ -4,6 +4,7 @@ import info.mapes.phasmophobiaapi.configs.Evidence
 import info.mapes.phasmophobiaapi.configs.Ghost
 import info.mapes.phasmophobiaapi.configs.PhasmophobiaProperties
 import info.mapes.phasmophobiaapi.domains.CalculatedEvidenceResponse
+import info.mapes.phasmophobiaapi.utils.filterToSet
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.exceptions.HttpStatusException
 import javax.inject.Singleton
@@ -28,7 +29,12 @@ class EvidenceService(
             )
         }
 
-        val matchedGhosts = phasmophobiaProperties.ghosts.filter { it.evidenceCodes.containsAll(foundEvidence) }.toSet()
+        val matchedGhosts = phasmophobiaProperties.ghosts
+            .filterToSet {
+                it.evidenceTypes.map { evidence ->
+                    evidence.code
+                }.containsAll(foundEvidence)
+            }
 
         if (matchedGhosts.isEmpty()) {
             throw HttpStatusException(
@@ -37,7 +43,9 @@ class EvidenceService(
             )
         }
 
-        val remainingEvidence = matchedGhosts.flatMap { it.evidenceCodes }.filterNot { it in foundEvidence }.toSet()
+        val remainingEvidence = matchedGhosts
+            .flatMap { it.evidenceCodes }
+            .filterToSet { it !in foundEvidence }
 
         return CalculatedEvidenceResponse(
             remainingEvidence = remainingEvidence,

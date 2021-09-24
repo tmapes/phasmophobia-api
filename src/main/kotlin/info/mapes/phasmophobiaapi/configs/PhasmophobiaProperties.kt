@@ -1,5 +1,6 @@
 package info.mapes.phasmophobiaapi.configs
 
+import info.mapes.phasmophobiaapi.utils.mapToSet
 import io.micronaut.context.annotation.ConfigurationInject
 import io.micronaut.context.annotation.ConfigurationProperties
 import io.micronaut.context.annotation.Context
@@ -16,9 +17,9 @@ data class PhasmophobiaProperties @ConfigurationInject constructor(
     val evidenceMap: Map<String, Evidence> = evidenceTypes.associateBy { it.code }
 
     val ghosts: List<Ghost> = ghostTypes.map {
-        val evidence = it.evidenceCodes.map { e ->
+        val evidence = it.evidenceCodes.mapToSet { e ->
             evidenceMap[e] ?: throw IllegalArgumentException("$e is not a valid evidence type")
-        }.toHashSet()
+        }
         it.copy(evidenceTypes = evidence)
     }
 }
