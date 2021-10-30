@@ -1,3 +1,5 @@
+No longer needed as the Phasmophobia Nightmare Update incorporated most of the features directly.
+
 ## Feature openapi documentation
 
 - [Micronaut OpenAPI Support documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
@@ -11,5 +13,3 @@
 ## Feature management documentation
 
 - [Micronaut Micronaut Management documentation](https://docs.micronaut.io/latest/guide/index.html#management)
-
-
